@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Music Hub</title>
+	<link rel ="stylesheet" href="home.css">
+<body onload="myFunction()">
+<h4>Click on the icon below for a surprise.</h4>
+<span id="year"></span>
+<div>
+<img style="width:5%;height:5%" id="insertingtext" onclick = "inserttext()" src="https://cdn0.iconfinder.com/data/icons/hand-gestures-vol-2/48/53-512.png">
+<div id="insert"></div>
+</div>
+<h1>Music Hub</h1>
+	<p id="intro">Your one-stop source for the latest hit music, playlists for every kind of mood, new releases, and good song recommendations!</p>
+	<p id="musicvideos">Featured: Great music videos can be found on <a href=https://www.youtube.com/>YouTube!</a>
+	<br>
+	<img id="youtubelogo" src="https://www.lifewire.com/thmb/921Lq5wGTi7bGs6aQnZTKreeab4=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/YouTube_logo_2015.svg-57ebbd433df78c690fc6ffa0.png" >
+<div id="movediv" onclick = "changeposition()">Click to move</div>
+
+<p>Looking for some new playlists? We have the perfect playlist for every mood:</p>
+	<ul>
+		<li>Classical</li>
+		<li>Pop</li>
+		<li>Top 40 Hits</li>
+		<li>2000's Throwback</li>
+		<li>Hot Country</li>
+		<li>...and many more!</li>
+	</ul>
+
+<h2>Site Navigation</h2>
+<nav>
+  <ul>
+    <li><a class="nav" href="youtube.html">Cool music playlists on YouTube</a></li>
+    <li><a class="nav" href="charts.html">Top Music Charts</a></li>
+  </ul>
+</nav>
+
+<h3>Click to change background color</h3>
+
+<button onclick="changeBackground()">Click me</button>
+
+<p id="color"></p>
+
+<script>
+function changeBackground() {
+   document.body.style.background = "dodgerblue";
+}
+function myFunction() {
+document.getElementById("year").innerHTML = new Date();
+}
+function changeposition() {
+var div = document.getElementById('movediv');
+div.style.left = '100px';
+div.style.position = "relative"}
+function inserttext() {
+document.getElementById("insert").innerHTML = "You found the text!"
+}
+</script>
+
+</body>
+</html>
